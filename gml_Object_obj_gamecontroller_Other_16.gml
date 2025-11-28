@@ -3799,6 +3799,9 @@ if (debugY > -1000)
                         base_name = string_replace_all(base_name, " ", "_");
                         str += ("id: " + base_id + ": getsceneid " + base_name + "\n");
                         fullstr += str;
+                        if (i == 76) {
+                            continue;
+                        }
                         base_name = scene_name2(i);
                         base_name = string_lower(base_name);
                         base_name = string_replace_all(base_name, " ", "_");
